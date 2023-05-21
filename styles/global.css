@@ -1,0 +1,168 @@
+* {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-bottom: 160px;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #120309;
+
+  height: 100px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .logo a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #f4f4f4;
+  transition: all 0.4s ease-out;
+}
+
+header .logo a:hover {
+  color: #9a031e;
+}
+
+header .logo {
+  flex: 1;
+  text-align: center;
+}
+
+.links {
+  flex: 1;
+}
+
+.links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left: 16px;
+  font-weight: 600;
+
+  color: rgb(244, 244, 244, 0.78);
+
+  transition: all 0.3s ease-out;
+}
+
+.links a:hover {
+  color: #9a031e;
+
+  font-weight: bold;
+}
+
+footer {
+  background-color: #120309;
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  padding: 16px 0;
+}
+
+footer .links-footer nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .links-footer nav a {
+  text-decoration: none;
+  font-weight: 500;
+
+  color: #b9babc;
+}
+
+footer .links-footer nav a:hover {
+  font-weight: bold;
+
+  color: #9a031e;
+}
+
+.footer-container .contact .title {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #f4f4f4;
+
+  margin-bottom: 6px;
+}
+
+.footer-container .contact p {
+  font-size: 14px;
+  font-weight: 400;
+
+  color: #f4f4f4;
+}
+
+.footer-container .contact p span {
+  font-weight: 500;
+
+  color: rgb(186, 184, 184);
+}
+
+.first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f4f4f4;
+
+  gap: 12px;
+}
+
+.first p:nth-child(2) {
+  color: rgb(186, 184, 184);
+}
+
+.first .logo {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+@media (max-width: 450px) {
+  body {
+    padding-bottom: 20rem;
+  }
+
+  .first {
+    gap: 4px;
+  }
+
+  .footer-container .contact {
+    margin-top: 14px;
+  }
+
+  .footer-container .links-footer {
+    margin-top: 14px;
+  }
+
+  .footer-container,
+  .footer-container .contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}

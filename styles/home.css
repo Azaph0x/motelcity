@@ -1,0 +1,163 @@
+header .logo {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #f4f4f4;
+  cursor: pointer;
+}
+
+header .logo:hover {
+  color: #9a031e;
+}
+
+.container {
+  min-height: 800px;
+  /* min-height: 100vh; */
+}
+
+.banner-wrapper {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/bbbb.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-wrapper p {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: #f4f4fa;
+}
+
+.banner-wrapper a {
+  display: block;
+
+  font-size: 16px;
+
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+
+  color: #f4f4f4;
+  font-weight: bold;
+
+  margin-top: 16px;
+  padding: 12px 0;
+  width: 180px;
+
+  border-radius: 5px;
+
+  background-color: #120309;
+  transition: background-color 0.3s ease-out;
+}
+
+.banner-wrapper a:hover {
+  color: #120309;
+  background-color: transparent;
+  border: 1px solid #120309;
+}
+
+.suits-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  min-height: 450px;
+  width: 100%;
+}
+
+.suits-container .title {
+  font-size: 64px;
+
+  letter-spacing: 0.8rem;
+
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin-top: 18px;
+  margin-bottom: 16px;
+
+  /* color: rgb(51, 51, 51, 0.44); */
+  color: #120309;
+}
+
+.suits-container .suits {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin: 0 12px;
+}
+
+.suits-container .suits .suite {
+  position: relative;
+  flex: 1 1 300px;
+}
+
+.suits-container .suits .suite {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 300px;
+  width: 300px;
+}
+
+.suits-container .suits .suite .info {
+  position: absolute;
+
+  bottom: 19px;
+  left: 28px;
+
+  font-size: 19px;
+  font-weight: 400;
+
+  color: #eee;
+}
+
+.suits-container .suits .suite .info .suite-name {
+  font-size: 28px;
+  font-weight: bold;
+
+  color: #f4f4f4;
+}
+
+@media screen and (max-width: 1000px) {
+  .suits-container .suits {
+    flex-direction: column;
+    margin-bottom: 22px;
+  }
+
+  .suits-container .suits .suite {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .suits-container .suits {
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+
+  .suits-container .suits .suite {
+    width: 300px;
+  }
+}
