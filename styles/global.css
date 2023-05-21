@@ -115,6 +115,8 @@ footer .links-footer nav a:hover {
   font-weight: 400;
 
   color: #f4f4f4;
+
+  text-decoration: none;
 }
 
 .footer-container .contact p span {
