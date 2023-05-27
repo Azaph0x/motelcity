@@ -55,14 +55,12 @@ Cart = {
     value = value.replace(/\D/g, "");
     booking.suite = suits[Number(value)];
     updateBooking();
-    // value_total.innerHTML = booking.suite.value;
     return value;
   },
   services(value) {
     value = value.replace(/\D/g, "");
     booking.services = services[Number(value)];
     updateBooking();
-    // value_total.innerHTML = booking.suite.value;
     return value;
   },
   cpf(value) {
@@ -79,7 +77,7 @@ Cart = {
 };
 
 function updateBooking() {
-  document.querySelector("#date").value = booking.datel;
+  document.querySelector("#date").value = booking.date;
   document.querySelector(
     ".services-value"
   ).innerHTML = `${booking.services.name} - R$${booking.services.value}`;
@@ -89,7 +87,11 @@ function updateBooking() {
   value_total.innerHTML = booking.suite.value + booking.services.value;
 }
 
-function submit() {
+function submitForm($event) {
+  // alert("oi");
+  $event.preventdefault();
+  window.location.href = "index.html";
   console.log(booking);
 }
+
 init();
